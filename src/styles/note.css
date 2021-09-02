@@ -1,0 +1,98 @@
+.note {
+    box-sizing: border-box;
+    width: 250px;
+    display: flex;
+    height: fit-content;
+    flex-direction: column;
+    border-radius: 7px;
+    box-sizing: border-box;
+    border: 2px solid transparent;
+}
+.note:hover {
+    border: 2px black solid;
+    cursor: pointer;
+    box-shadow:
+        1px 1px #f3f3f3,
+        2px 2px #c0c0c0,
+        3px 3px #a5a3a3,
+        4px 4px #727272,
+        5px 5px #6e6e6e,
+        6px 6px #666565,
+        7px 7px #464646;
+    -webkit-transform: translateX(-7px);
+    transform: translateX(-7px);
+}
+.note-content {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.note-content-subject {
+    display: block;
+    display: -webkit-box;
+    line-height: 30px;
+    height: 30px;
+    font-size: 20px;
+    width: 100%;
+    padding: 8px 0 30px 10px;
+    border-bottom: 2px rgb(92, 92, 92) solid;
+    background-color: #DEF1F6;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: #494454;
+    word-wrap: break-word;
+    overflow: hidden;
+    text-overflow: ellipsis;    
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+}
+
+.note-content-text {
+    display: block;
+    display: -webkit-box;
+    line-height: 20px;
+    max-height:calc(8 * 20);
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 8;
+    font-size: 18px; 
+    word-wrap: break-word;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    background-color: #fff;
+    /* 
+    background-color: #DEF1F6;
+    padding: 8px; */ 
+}
+
+.note-data {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    height: 30px;
+    padding: 6px 4px 2px 4px;
+    font-size: 16px;
+    border-top: 1px rgb(92, 92, 92) solid;
+}
+
+.note-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 6px 0;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background-color: #3F3D43;
+}
+
+.note-footer i {
+    display: inline-block;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.note-footer i:first-child{
+    margin-right: 20px;
+}

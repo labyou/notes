@@ -1,0 +1,52 @@
+.chosen-container {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin: 20px auto;
+    border: 2px black solid;
+    border-bottom-right-radius: 10px;
+}
+
+.chosen-note-content{
+    width: 70%;
+    padding-left: 30px;
+}
+.chosen-subject{
+    display: block;
+    font-size: 50px;
+    padding-left: 10px;
+    border-bottom: 3px black solid;
+    word-wrap: break-word;
+}
+.chosen-text{
+    display: block;
+    margin-top: 20px;
+    padding-left: 18px;
+    font-size: 30px;
+    word-wrap: break-word;
+}
+.chosen-note-data{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+.data-date{
+    margin-left: 20px;
+}
+.buttons-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 30%;
+}
+.buttons-container button{
+    background-color: #318C9E;
+    width: 120px;
+    height: 50px;
+    border-radius: 18px;
+    margin: 10px;
+}

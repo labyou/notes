@@ -1,0 +1,57 @@
+.add-note-container {
+    display: flex;
+    flex-direction: column;
+
+    max-width: 300px;
+    min-width: 200px;
+
+    margin: 20px auto;
+    border: 2px black solid;
+    border-radius: 7px;
+}
+
+.add-note-container textarea {
+    background-color: #C6FCED;
+    outline: none;
+    resize: none;
+    overflow: auto;
+    margin: 10px;
+}
+
+.add-note-container textarea:first-of-type{
+    max-height: 30px;
+}
+.add-note-container textarea:last-of-type {
+    max-height: 70px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.add-note-container textarea::placeholder{
+    font-size: 16px;
+}
+.add-note-containet__header {
+    display: inline-flex;
+    align-items: center;
+    padding-left: 10px;
+    border-bottom: 2px black solid;
+    height: 30px;
+    font-size: 20px;
+    background-color: #76A4A6;
+}
+.save-button-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 40px;
+    background-color: #3F3D43;
+}
+.save-button {
+    background-color: #318C9E;
+    height: 26px;
+    margin-right: 20px;
+    width: 70px;
+    border-radius: 10px;
+    font-size: 20px;
+}
